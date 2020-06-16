@@ -12,7 +12,13 @@ namespace csharp_web_dev_lsn9exceptions
             {
                 var calculator = new Calculator();
                 calculator.Divide(5, 0);
-
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("You cannot divide by zero.");
+            }
+            try
+            {
                 // Test out your CheckFileExtension() function here!
                 Dictionary<string, string> students = new Dictionary<string, string>();
                 students.Add("Carl", "Program.cs");
@@ -28,11 +34,10 @@ namespace csharp_web_dev_lsn9exceptions
                     Console.WriteLine(gradebook.CheckFileExtension(student.Value));
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("You cannot divide by zero.");
+                Console.WriteLine("Whoops");
             }
-
 
             
 
