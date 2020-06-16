@@ -8,6 +8,11 @@
 
         public string CheckFileExtension(string fileName)
         {
+            if (fileName == null || fileName == "")
+            {
+                System.Console.WriteLine("No file submitted.");
+            }
+
             if (fileName.EndsWith(".cs"))
             {
                 Grade = 1;
