@@ -2,7 +2,7 @@
 {
     public class Calculator
     {
-        static double Divide(double numerator, double denominator)
+        public int Divide(int numerator, int denominator)
         {
             return numerator / denominator;
         }
