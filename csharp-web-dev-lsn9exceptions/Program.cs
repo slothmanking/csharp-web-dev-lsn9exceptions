@@ -5,12 +5,6 @@ namespace csharp_web_dev_lsn9exceptions
 {
     class Program
     {
-        //static int CheckFileExtension(string fileName)
-        //{
-        //    // Write your code here!
-        //}
-
-
         static void Main(string[] args)
         {
             // Test out your Divide() function here!
@@ -23,13 +17,22 @@ namespace csharp_web_dev_lsn9exceptions
             {
                 Console.WriteLine("You cannot divide by zero.");
             }
-            // Test out your CheckFileExtension() function here!
-            //Dictionary<string, string> students = new Dictionary<string, string>();
-            //students.Add("Carl", "Program.cs");
-            //students.Add("Brad", "");
-            //students.Add("Elizabeth", "MyCode.cs");
-            //students.Add("Stefanie", "CoolProgram.cs");
 
+
+            // Test out your CheckFileExtension() function here!
+            Dictionary<string, string> students = new Dictionary<string, string>();
+            students.Add("Carl", "Program.cs");
+            students.Add("Brad", "");
+            students.Add("Elizabeth", "MyCode.cs");
+            students.Add("Stefanie", "CoolProgram.cs");
+
+            var gradebook = new GradeBook();
+
+            foreach (var student in students)
+            {
+                gradebook.CheckFileExtension(student.Value);
+
+            }
 
         }
     }
