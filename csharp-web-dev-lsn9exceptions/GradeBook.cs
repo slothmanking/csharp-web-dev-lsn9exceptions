@@ -9,9 +9,13 @@
         public string CheckFileExtension(string fileName)
         {
             if (fileName.EndsWith(".cs"))
-                {
-                    Grade +=1;
-                }
+            {
+                Grade = 1;
+            }
+            else
+            {
+                Grade = 0;
+            }
             return Grade.ToString();
         }
     }

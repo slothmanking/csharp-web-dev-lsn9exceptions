@@ -30,9 +30,10 @@ namespace csharp_web_dev_lsn9exceptions
 
             foreach (var student in students)
             {
-                gradebook.CheckFileExtension(student.Value);
-
+                //gradebook.CheckFileExtension(student.Value);
+                Console.WriteLine(gradebook.CheckFileExtension(student.Value));
             }
+
 
         }
     }
