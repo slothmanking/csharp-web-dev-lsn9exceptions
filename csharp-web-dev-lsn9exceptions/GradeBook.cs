@@ -13,7 +13,7 @@
                 System.Console.WriteLine("No file submitted.");
             }
 
-            if (fileName.EndsWith(".cs"))
+            else if (fileName.EndsWith(".cs"))
             {
                 Grade = 1;
             }

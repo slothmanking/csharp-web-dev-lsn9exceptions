@@ -12,6 +12,21 @@ namespace csharp_web_dev_lsn9exceptions
             {
                 var calculator = new Calculator();
                 calculator.Divide(5, 0);
+
+                // Test out your CheckFileExtension() function here!
+                Dictionary<string, string> students = new Dictionary<string, string>();
+                students.Add("Carl", "Program.cs");
+                students.Add("Brad", "");
+                students.Add("Elizabeth", "MyCode.cs");
+                students.Add("Stefanie", "CoolProgram.cs");
+
+                var gradebook = new GradeBook();
+
+                foreach (var student in students)
+                {
+                    //gradebook.CheckFileExtension(student.Value);
+                    Console.WriteLine(gradebook.CheckFileExtension(student.Value));
+                }
             }
             catch (Exception)
             {
@@ -19,20 +34,7 @@ namespace csharp_web_dev_lsn9exceptions
             }
 
 
-            // Test out your CheckFileExtension() function here!
-            Dictionary<string, string> students = new Dictionary<string, string>();
-            students.Add("Carl", "Program.cs");
-            students.Add("Brad", "");
-            students.Add("Elizabeth", "MyCode.cs");
-            students.Add("Stefanie", "CoolProgram.cs");
-
-            var gradebook = new GradeBook();
-
-            foreach (var student in students)
-            {
-                //gradebook.CheckFileExtension(student.Value);
-                Console.WriteLine(gradebook.CheckFileExtension(student.Value));
-            }
+            
 
 
         }
